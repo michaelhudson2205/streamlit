@@ -23,6 +23,6 @@ blob = TextBlob(text)
 
 col1, col2 = st.columns(2)
 with col1:
-    st.metric('Emotion', blob.sentiment.polarity)
+    st.metric('Emotion (-1 to +1)', blob.sentiment.polarity)
 with col2:
-    st.metric('Subjectivity', blob.sentiment.subjectivity)
+    st.metric('Subjectivity (0 to 1)', blob.sentiment.subjectivity)
